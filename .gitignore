@@ -1,0 +1,16 @@
+# Secrets
+.env
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Generated vector DB (rebuild with: python src/ingest.py)
+chroma_db/
+
+# Input PDFs may be large or private
+data/pdfs/
+
+# Personal notes for Claude Code
+CLAUDE.md
