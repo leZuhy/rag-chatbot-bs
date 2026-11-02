@@ -19,9 +19,14 @@ MODEL_NAME = "intfloat/multilingual-e5-base"
 RRF_K = 60
 
 
+# Students often type without diacritics ("masinsko ucenje"). Stripping them on BOTH
+# sides (index and query, since both go through tokenize) makes those words match.
+DIACRITICS = str.maketrans({"č": "c", "ć": "c", "š": "s", "ž": "z", "đ": "dj"})
+
+
 def tokenize(text):
-    """Lowercase word tokens for BM25. \\w is Unicode-aware, so č, ć, š, ž, đ stay intact."""
-    return re.findall(r"\w+", text.lower())
+    """Lowercase, diacritic-free word tokens for BM25."""
+    return re.findall(r"\w+", text.lower().translate(DIACRITICS))
 
 
 @cache
@@ -34,10 +39,13 @@ def _load():
     # That keeps one source of truth: re-run ingest.py and both indexes update.
     data = collection.get(include=["documents", "metadatas"])
     chunks = [
-        {"chunk_id": cid, "text": doc, "source": meta["source"], "page": meta["page"]}
+        {"chunk_id": cid, "text": doc, "source": meta["source"], "page": meta["page"],
+         "header": meta.get("header", ""), "course": meta.get("course", "")}
         for cid, doc, meta in zip(data["ids"], data["documents"], data["metadatas"])
     ]
-    bm25 = BM25Okapi([tokenize(c["text"]) for c in chunks])
+    # BM25 indexes header + text, so a query naming the course ("Kvalitet softvera")
+    # matches chunks of that syllabus even if the chunk text itself doesn't name it.
+    bm25 = BM25Okapi([tokenize(c["header"] + " " + c["text"]) for c in chunks])
     return model, collection, bm25, chunks
 
 
@@ -54,6 +62,7 @@ def vector_search(query, k=5):
     ):
         results.append({
             "chunk_id": cid, "text": doc, "source": meta["source"], "page": meta["page"],
+            "course": meta.get("course", ""),
             "score": 1 - dist,  # Chroma returns cosine distance; 1 - distance = similarity
         })
     return results

@@ -9,8 +9,9 @@ __pycache__/
 # Generated vector DB (rebuild with: python src/ingest.py)
 chroma_db/
 
-# Input PDFs may be large or private
+# Input PDFs may be large or private (incl. ones moved out of the corpus)
 data/pdfs/
+data/removed/
 
 # Personal notes for Claude Code
 CLAUDE.md

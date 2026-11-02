@@ -1,0 +1,439 @@
+{
+  "judge_model": "claude-sonnet-5-5",
+  "search": "hybrid",
+  "tokens": {
+    "app_in": 211208,
+    "app_out": 12225,
+    "judge_in": 26024,
+    "judge_out": 3239
+  },
+  "answers": [
+    {
+      "id": "gen_01",
+      "type": "generated",
+      "answerable": true,
+      "question": "Na kojoj skali treba ocijeniti evaluaciju korisničkog interfejsa i koliko detaljno treba obrazložiti svaku ocjenu?",
+      "expected_answer": "Ocjene se daju na skali od 1 do 10, a svaka ocjena se kratko obrazlaže jednom rečenicom.",
+      "app_answer": "Evaluaciju treba ocijeniti na skali od 1 do 10. Ocjene su na skali od 1 do 10, i svaku ocjenu kratko obrazložite. Svaka ocjena treba biti obrazložena jednom rečenicom: (jednom rečenicom).",
+      "cited": [
+        "Izvještaj za završni ispit.pdf, str. 2"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot navodi skalu od 1 do 10 i da svaku ocjenu treba kratko obrazložiti jednom rečenicom, što odgovara očekivanom odgovoru, uprkos nezgrapnoj formulaciji.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_02",
+      "type": "generated",
+      "answerable": true,
+      "question": "Koje dijelove treba da sadrži projektni zadatak i šta se mora nalaziti u dijelu o upravljanju projektom?",
+      "expected_answer": "Projektni zadatak treba sadržavati uvod, opis poslovnog profila, model poslovne orijentacije, upravljanje projektom, definiranje zahtjeva, brojne dijagrame i modele (organizacijske strukture, procesa, podataka, arhitekture), prototip korisničkog interfejsa i zaključak. Dio o upravljanju projektom mora sadržavati naziv projekta, djelokrug i ciljeve, te aktivnosti, gantogram i resurse prikazane u MS Projectu.",
+      "app_answer": "Prema dokumentu *O1_Upute za izradu projektnog zadatka*, kako bi imali okvirnu sliku što sve projektni zadatak mora sadržavati, pobrojani su ključni dijelovi:\n\n1. Uvod\n2. Opis polovnog profila\n3. Model poslovne orijentacije poduzeća (misija, poslovni ciljevi, specifične strategije, kritični faktori uspjeha, kritični poslovni faktori, poslovna vizija, ključne poslovne politike)\n4. Upravljanje projektom\n5. Definiranje zahtjeva (poslovni, funkcionalni i nefunkcionalni zahtjevi)\n6. Dijagram organizacijske strukture\n7. Hijerarhijski dijagram procesa\n8. Kontekstualni dijagram\n9. Logički model procesa\n10. Fizički model procesa\n11. Konceptualni model podataka\n12. Logički model podataka\n13. Fizički model podataka\n14. Shema baze podataka\n15. Model arhitekture informacijskog sistema\n16. Model arhitekture mreže\n17. Prototip korisničkog interfejsa\n18. Zaključak\n\n**Dio o upravljanju projektom** mora sadržavati: naziv projekta, djelokrug i ciljeve projekta. Također, u ovom djelu, student mora predstaviti aktivnosti projekta, gantogram i resurse koristeći MS Project.\n\nNapomena: dokument *RS1 upute za izradu seminarskog rada 2026-27* opisuje projektni zadatak općenije, kao rad na odobrenu temu, koji obuhvata prikupljanje i analizu softverskih zahtjeva, modeliranje (dijagram klasa, ER dijagram), razvoj aplikacije, testiranje i pripadajuću dokumentaciju. Taj dokument ne navodi detaljnu listu dijelova kao gore, pa ne mogu potvrditi da su oni isti za akademsku 2026/27.",
+      "cited": [
+        "O1_Upute za izradu projektnog zadatka.pdf, str. 1",
+        "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 1"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot navodi sve ključne dijelove projektnog zadatka (uvod, poslovni profil, model poslovne orijentacije, upravljanje projektom, zahtjevi, dijagrami i modeli, prototip, zaključak) te tačno navodi da upravljanje projektom sadrži naziv, djelokrug, ciljeve, aktivnosti, gantogram i resurse u MS Projectu; dodatni detalji i napomena ne protivrječe očekivanom odgovoru.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_03",
+      "type": "generated",
+      "answerable": true,
+      "question": "Da li GitHub Project mora biti javan, i kako se postavlja njegova vidljivost?",
+      "expected_answer": "Da, GitHub Project mora biti javan; vidljivost se postavlja preko Settings projekta → Danger zone → Change visibility → Public, jer javni repozitorij ne čini projekat javnim automatski.",
+      "app_answer": "Da, GitHub Project mora biti javan. GitHub Project mora biti javan. Vidljivost se postavlja putem Settings projekta → Danger zone → Change visibility → Public. Dokumenti također naglašavaju da javni repozitorij ne čini projekat javnim automatski.",
+      "cited": [
+        "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 2"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot potvrđuje da projekat mora biti javan, navodi tačnu putanju (Settings → Danger zone → Change visibility → Public) i napominje da javni repozitorij ne čini projekat automatski javnim, što odgovara očekivanom odgovoru.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_04",
+      "type": "generated",
+      "answerable": true,
+      "question": "Koji predmet moram odslušati prije nego što mogu upisati Matematiku II na FIT-u?",
+      "expected_answer": "Preduslov za polaganje Matematike II je odslušan predmet Matematika I.",
+      "app_answer": "Prije Matematike II potrebno je odslušati predmet Matematika I. Dokument navodi: Preduslovi za polaganje predmeta: Odslušan predmet Matematika I.",
+      "cited": [
+        "predmeti na fitu.pdf, str. 7"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot navodi da je preduslov za Matematiku II odslušan predmet Matematika I, što se potpuno poklapa s očekivanim odgovorom.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_05",
+      "type": "generated",
+      "answerable": true,
+      "question": "Od koje akademske godine počinju da se primjenjuju Pravila studiranja na I ciklusu na Univerzitetu \"Džemal Bijedić\" u Mostaru?",
+      "expected_answer": "Pravila se primjenjuju počev od akademske 2015/16. godine, a stupaju na snagu danom donošenja.",
+      "app_answer": "Pravila se primjenjuju od akademske 2015/16. godine. Ova Pravila stupaju na snagu danom donošenja, a primjenjivat će se počev od akademske 2015/16. godine.",
+      "cited": [
+        "pravila o studiranju na prvom ciklusu studija.pdf, str. 13"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot navodi da se Pravila primjenjuju od akademske 2015/16. godine i da stupaju na snagu danom donošenja, što se potpuno poklapa s očekivanim odgovorom.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_06",
+      "type": "generated",
+      "answerable": true,
+      "question": "Koliko nastave moram minimalno pohađati da bih mogao izaći na ispit iz predmeta Uvod u menadžment?",
+      "expected_answer": "Redovni studenti su obavezni prisustvovati nastavi minimalno 70% od ukupnog broja sati predmeta.",
+      "app_answer": "Za redovne studente, prema dokumentu o predmetu Uvod u menadžment, Redovni studenti su obavezni prisustvovati nastavi minimalno 70% od ukupnog broja sati predmeta.\n\nPravilnik o studiranju dodatno navodi da prisustvo svim vidovima nastave je obavezno za redovne studente, o čemu se vodi evidencija na osnovu koje student, po odslušanom semestru, dobija potpis od predmetnog nastavnika.\n\nZa vanredne studente pravilo je drugačije: nisu obavezni pohađati redovnu nastavu, ali moraju izvršavati sve ostale obaveze predviđene nastavnim programima.\n\nDokumenti ne navode izričito da li je prisustvo od 70% uslov za izlazak na ispit, jer je ono navedeno među \"ostalim obavezama studenta\". Ako želite tačnu informaciju o tome, provjerite kod predmetnog nastavnika.",
+      "cited": [
+        "pravila o studiranju na prvom ciklusu studija.pdf, str. 4",
+        "predmeti na fitu.pdf, str. 13"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot navodi ključnu činjenicu da redovni studenti moraju prisustvovati minimalno 70% od ukupnog broja sati predmeta, a dodatni detalji o vanrednim studentima i potpisu ne protivrječe očekivanom odgovoru.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_07",
+      "type": "generated",
+      "answerable": true,
+      "question": "Koje principe dizajna interakcije treba da znam primijeniti i objasniti na završnom ispitu?",
+      "expected_answer": "Principi dizajna interakcije su: vidljivost, logičnost, konzistentnost, odgovaranje namjeni, povratne informacije i mudra ograničenja.",
+      "app_answer": "Na završnom ispitu trebate navesti i primjere primjene sljedećih principa dizajna interakcije: vidljivo, logično, konzistentno, odgovara namjeni, sa povratnim informacijama, sa mudrim ograničenjima.\n\nZa primjere možete uzeti vaš seminarski rad, ali ne morate se ograničiti na ono što je urađeno. Također, procijenite kada je potrebno u odgovorima na pitanja da uzmete obzir kako bi bilo da ste implementirali profesionalni proizvod.",
+      "cited": [
+        "Izvještaj za završni ispit.pdf, str. 1"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot navodi svih šest principa (vidljivost, logičnost, konzistentnost, odgovaranje namjeni, povratne informacije, mudra ograničenja), a dodatni savjeti o primjerima ne protivrječe očekivanom odgovoru.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_08",
+      "type": "generated",
+      "answerable": true,
+      "question": "Kako da predam seminarski rad za Razvoj softvera I i kada mogu očekivati povratnu informaciju?",
+      "expected_answer": "Rad se predaje isključivo kroz DLWMS (Nastava → III godina → Razvoj softvera I → Zadaci) uz popunjen propisani obrazac, a predaja je jednom mjesečno: rad do 8. u mjesecu, povratna informacija do 16. Radovi poslani emailom se ne pregledaju.",
+      "app_answer": "Dokumenti ne sadrže potpuna uputstva za predaju rada ni rok za povratnu informaciju. Ono što piše:\n\n- Obrazac za prijavu pregleda objavljuje se na DLWMS-u.\n- Rezultat pregleda je „prihvaćen” ili „nije prihvaćen”, uz bodove za aplikaciju.\n- Dorada se predaje u sljedećem mjesečnom terminu.\n\nNedostaje: način i rok predaje, kao i koliko se nakon predaje čeka na rezultat pregleda. Dio uputstava o prijavi pregleda nije u dostavljenim dokumentima. Za te detalje provjerite obrazac na DLWMS-u ili se obratite asistentima na rs1.vjezbe@edu.fit.ba.",
+      "cited": [
+        "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6"
+      ],
+      "verdict": "NETAČNO",
+      "reason": "Chatbot kaže da dokumenti ne sadrže način i rok predaje ni rok za povratnu informaciju, dok očekivani odgovor navodi predaju isključivo kroz DLWMS, rok do 8. u mjesecu i povratnu informaciju do 16., pa ključne činjenice nedostaju.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_09",
+      "type": "generated",
+      "answerable": true,
+      "question": "Koliki procenat nastave redovni studenti moraju pohađati da bi mogli izaći na ispit iz predmeta Programiranje I?",
+      "expected_answer": "Redovni studenti su obavezni prisustvovati nastavi minimalno 70% od ukupnog broja sati predmeta.",
+      "app_answer": "Ne znam, ta informacija nije u dokumentima.",
+      "cited": [],
+      "verdict": "NETAČNO",
+      "reason": "Chatbot kaže da ne zna odgovor, a očekivani odgovor je da redovni studenti moraju prisustvovati najmanje 70% nastave.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_10",
+      "type": "generated",
+      "answerable": true,
+      "question": "Koje uslove moram ispuniti da dobijem diplomu prvog ciklusa studija i stručno zvanje bachelor?",
+      "expected_answer": "Diploma dodiplomskog studija i stručno zvanje bachelor izdaju se studentu koji je položio sve ispite predviđene studijskim programom i ispunio sve ostale obaveze propisane Statutom Univerziteta i Pravilima. Uz diplomu se izdaje i dodatak diplomi (diploma supplement).",
+      "app_answer": "Prema pravilima, diplomu dodiplomskog studija i stručno zvanje bachelor dobija student koji je položio sve ispite predviđene studijskim programom i ispunio sve ostale obaveze propisane Statutom Univerziteta i ovim Pravilima.\n\nDokumenti također navode da dodiplomski studij traje tri odnosno četiri godine, a vrednuje se sa 180 ECTS odnosno 240 ECTS studijskih bodova.\n\nUz diplomu se izdaje i dodatak diplomi (diploma supplement) radi detaljnijeg uvida u nivo, prirodu, sadržaj, sistem i pravila studiranja i postignute rezultate tokom studija.\n\nDokumenti ne navode koji su tačno ispiti i ostale obaveze potrebni za završetak studija. Te informacije treba provjeriti u Statutu Univerziteta i u studijskom programu vašeg smjera.",
+      "cited": [
+        "pravila o studiranju na prvom ciklusu studija.pdf, str. 12",
+        "pravila o studiranju na prvom ciklusu studija.pdf, str. 3"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Odgovor chatbota sadrži sve ključne činjenice iz očekivanog odgovora (položeni svi ispiti iz studijskog programa, ispunjene obaveze iz Statuta i Pravila, te dodatak diplomi), a dodatni detalji o trajanju i ECTS bodovima im ne protivrječe.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_11",
+      "type": "generated",
+      "answerable": true,
+      "question": "Koliko je obavezno prisustvo nastavi za redovne studente na predmetu Kvalitet softvera?",
+      "expected_answer": "Redovni studenti su obavezni prisustvovati nastavi minimalno 70% od ukupnog broja sati predmeta.",
+      "app_answer": "Za redovne studente na predmetu Kvalitet softvera, minimalno 70% od ukupnog broja sati predmeta je obavezno prisustvovati nastavi.\n\nOpšta pravila o studiranju također navode da prisustvo svim vidovima nastave je obavezno za redovne studente, o čemu se vodi evidencija na osnovu koje student, po odslušanom semestru, dobija potpis od predmetnog nastavnika.",
+      "cited": [
+        "pravila o studiranju na prvom ciklusu studija.pdf, str. 4",
+        "predmeti na fitu.pdf, str. 33"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot navodi da je za redovne studente obavezno minimalno 70% prisustva od ukupnog broja sati predmeta, što odgovara očekivanom odgovoru, a dodatna opšta pravila o evidenciji prisustva mu ne protivrječe.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_12",
+      "type": "generated",
+      "answerable": true,
+      "question": "Koju opciju u Visual Studiu treba isključiti da zatvaranje browsera ne bi zaustavilo backend?",
+      "expected_answer": "Treba isključiti opciju „Stop debugger when browser window is closed” u Tools → Options → Projects and Solutions → Web Projects, jer tada zatvaranje browsera ne zaustavlja backend.",
+      "app_answer": "Treba isključiti opciju „Stop debugger when browser window is closed” (Tools → Options → Projects and Solutions → Web Projects). Tada zatvaranje browsera ne zaustavlja backend.",
+      "cited": [
+        "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 7"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot navodi istu opciju „Stop debugger when browser window is closed“, istu putanju u Visual Studiu (Tools → Options → Projects and Solutions → Web Projects) i isti efekat, pa se potpuno poklapa s očekivanim odgovorom.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_13",
+      "type": "generated",
+      "answerable": true,
+      "question": "Koji predmet moram odslušati prije nego što mogu polagati Matematiku III na FIT-u?",
+      "expected_answer": "Preduslov za polaganje predmeta Matematika III je odslušan predmet Matematika I.",
+      "app_answer": "Za Matematiku III na FIT-u morate prije polaganja odslušati predmet Matematika I. Preduslovi za polaganje predmeta: Odslušan predmet Matematika I",
+      "cited": [
+        "predmeti na fitu.pdf, str. 17"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot navodi da je preduslov za polaganje Matematike III odslušan predmet Matematika I, što se u potpunosti poklapa s očekivanim odgovorom.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_14",
+      "type": "generated",
+      "answerable": true,
+      "question": "Koliko primjeraka završnog rada moram predati studentskoj službi i koliko dana mora proći od predaje rada do odbrane?",
+      "expected_answer": "Student predaje 3 primjerka završnog rada studentskoj službi fakulteta, a od predaje rada do odbrane mora proći najmanje 5 dana.",
+      "app_answer": "Završni rad predajete u tri primjerka: Student predaje 3 (tri) primjerka završnog rada studentskoj službi fakulteta.\n\nOd predaje rada do odbrane mora proći najmanje pet dana: Od predaje rada do njegove odbrane mora proći najmanje 5 (pet) dana.",
+      "cited": [
+        "pravila o studiranju na prvom ciklusu studija.pdf, str. 12"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot navodi da se predaju 3 primjerka studentskoj službi i da od predaje do odbrane mora proći najmanje 5 dana, što u potpunosti odgovara očekivanom odgovoru.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_15",
+      "type": "generated",
+      "answerable": true,
+      "question": "Koje su preduslove potrebno ispuniti da bih mogao upisati predmet Mašinsko učenje na FIT-u?",
+      "expected_answer": "Za polaganje predmeta Mašinsko učenje potrebno je da su položeni svi predmeti iz oblasti Matematike i Statistike.",
+      "app_answer": "Za predmet Mašinsko učenje, dokumenti navode sljedeći preduslov: Preduslovi za polaganje predmeta: Položeni svi predmeti iz oblasti Matematike i Statistike.\n\nDokumenti ne navode dodatna pravila o upisu, pa ne mogu potvrditi da li postoje drugi uslovi osim ovog.",
+      "cited": [
+        "predmeti na fitu.pdf, str. 43"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot navodi isti preduslov kao očekivani odgovor (položeni svi predmeti iz oblasti Matematike i Statistike), a dodatna napomena o nepostojanju drugih podataka ne protivrječi tome.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_16",
+      "type": "generated",
+      "answerable": true,
+      "question": "Šta se dešava sa issueom i karticom na tabli kad se pull request spoji u glavnu granu?",
+      "expected_answer": "Nakon pregleda spaja se pull request, issue se automatski zatvara, a kartica na tabli prelazi u kolonu Done.",
+      "app_answer": "Kada se pull request spoji, issue se automatski zatvara, a kartica prelazi u Done.",
+      "cited": [
+        "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 3"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot navodi da se issue automatski zatvara i da kartica prelazi u Done, što odgovara svim ključnim činjenicama iz očekivanog odgovora.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_17",
+      "type": "generated",
+      "answerable": true,
+      "question": "Koliko bodova ili procenata nosi pismeni ispit, a koliko praktični ispit i seminarski rad na predmetu Baze podataka I?",
+      "expected_answer": "Pismeni ispit nosi 35%, praktični ispit 35%, a seminarski rad 30% ukupne ocjene znanja.",
+      "app_answer": "Na predmetu **Baze podataka I** Pismeni ispit 35%, Praktični ispit 35%, Seminarski rad 30%.\n\nDokumenti navode ove vrijednosti kao težinske faktore (procente), a ne broj bodova. Također preduvjet za izlazak na praktični ispit je položen pismeni ispit i urađen seminarski rad.",
+      "cited": [
+        "predmeti na fitu.pdf, str. 15"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot navodi tačne procente (pismeni 35%, praktični 35%, seminarski 30%), što se u potpunosti poklapa s očekivanim odgovorom, a dodatna napomena o preduvjetima ne protivrječi.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_18",
+      "type": "generated",
+      "answerable": true,
+      "question": "Koliko godina traje dodiplomski studij na Univerzitetu Džemal Bijedić i koliko ECTS bodova se za njega dobija?",
+      "expected_answer": "Dodiplomski studij traje tri ili četiri godine, a vrednuje se sa 180 ECTS odnosno 240 ECTS studijskih bodova.",
+      "app_answer": "Dodiplomski studij traje tri odnosno četiri godine, a vrednuje se sa 180 ECTS odnosno 240 ECTS studijskih bodova.\n\nDokumenti ne navode koji se od ta dva trajanja primjenjuje na pojedine studijske programe.",
+      "cited": [
+        "pravila o studiranju na prvom ciklusu studija.pdf, str. 3"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot navodi da dodiplomski studij traje tri odnosno četiri godine uz 180 odnosno 240 ECTS bodova, što se potpuno poklapa s očekivanim odgovorom, a dodatna napomena mu ne protivrječi.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_19",
+      "type": "generated",
+      "answerable": true,
+      "question": "Koliko posto ocjene iz predmeta Analiza i dizajn softvera se računa iz parcijalnih ispita i da li mogu polagati integralni ispit?",
+      "expected_answer": "Ocjena se može dobiti kroz dva parcijalna ispita, svaki nosi 50% težinskog faktora, ili kroz integralni ispit koji nosi 100%. Za svaku provjeru znanja potrebno je ostvariti najmanje 55% od ukupnog broja bodova.",
+      "app_answer": "Prema dokumentu o predmetu Analiza i dizajn softvera, način provjere znanja je: (Prvi parcijalni ispit 50% i drugi parcijalni ispit 50%) ili integralni ispit 100%.\n\nDakle, ocjena se može formirati na dva načina: kroz dva parcijalna ispita, od kojih svaki nosi 50% ukupne ocjene, ili kroz jedan integralni ispit koji nosi 100%. Dokument također navodi da se 55% od ukupnog broja bodova odnosi na svaku provjeru znanja, ali nije potpuno jasno da li se to odnosi na prolazni prag za svaki parcijalni ispit ili nešto drugo. Dokumenti ne pojašnjavaju ni eventualne uslove za polaganje integralnog ispita, pa to treba provjeriti kod nastavnika.",
+      "cited": [
+        "predmeti na fitu.pdf, str. 19"
+      ],
+      "verdict": "DJELIMIČNO",
+      "reason": "Chatbot tačno navodi dva parcijalna ispita po 50% ili integralni ispit sa 100%, ali je prag od 55% za svaku provjeru znanja predstavio nejasno i nesigurno, umjesto da potvrdi da je to minimum potreban za svaku provjeru.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_20",
+      "type": "generated",
+      "answerable": true,
+      "question": "Koliko kompletnih pull requestova mora napraviti svaki student na projektu?",
+      "expected_answer": "Svaki student mora napraviti najmanje 15 kompletnih pull requestova.",
+      "app_answer": "Svaki student mora napraviti **najmanje 15 kompletnih pull requestova**. Uslov za prihvatanje rada je najmanje 15 kompletnih pull requestova po studentu, raspoređenih kroz najmanje 4 различite sedmice.\n\nKompletan PR mora ispunjavati sljedeće uslove: vezan je za issue (Closes #N), ima opis (šta je urađeno i kako je testirano), ima najmanje jedan komentar na liniju koda na kartici Files changed (code review) i spojen je u main.",
+      "cited": [
+        "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot navodi da svaki student mora napraviti najmanje 15 kompletnih pull requestova, što odgovara očekivanom odgovoru; dodatni detalji (4 sedmice, uslovi kompletnog PR-a) ne protivrječe mu.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_21",
+      "type": "generated",
+      "answerable": true,
+      "question": "Koji su preduvjeti za upis predmeta Programiranje III na FIT-u i ko ga može slušati?",
+      "expected_answer": "Za predmet Programiranje III potrebno je položiti ispit iz predmeta Programiranje II, a predmet je dostupan samo studentima FIT-a.",
+      "app_answer": "Preduvjet za upis predmeta Programiranje III je položen ispit iz predmeta Programiranje II. Preduvjeti za polaganje predmeta: Položen ispit iz predmeta Programiranje II. Ograničenja pristupa predmetu: samo studenti FIT-a.\n\nPredmet mogu slušati samo studenti Fakulteta informacijskih tehnologija.",
+      "cited": [
+        "predmeti na fitu.pdf, str. 14"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot navodi da je preduvjet položen ispit iz Programiranja II i da predmet mogu slušati samo studenti FIT-a, što se u potpunosti poklapa s očekivanim odgovorom.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_22",
+      "type": "generated",
+      "answerable": true,
+      "question": "Da li su prisustva na nastavi obavezna za redovne studente, i da li vanredni studenti moraju dolaziti na redovna predavanja?",
+      "expected_answer": "Prisustvo svim vidovima nastave je obavezno za redovne studente, dok vanredni studenti nisu obavezni pohađati redovnu nastavu, ali moraju izvršavati sve ostale obaveze predviđene nastavnim programima.",
+      "app_answer": "**Za redovne studente:** Prisustvo je obavezno. Prisustvo svim vidovima nastave je obavezno za redovne studente, o čemu se vodi evidencija na osnovu koje student, po odslušanom semestru, dobija potpis od predmetnog nastavnika. Redovni student može ovjeriti semestar samo ako ima te potpise: Redovni student može izvršiti ovjeru semestra ukoliko je dobio potpise od predmetnih nastavnika, a potpis predmetnog nastavnika se dobija na osnovu redovnog prisustva na nastavi tokom jednog semestra.\n\n**Za vanredne studente:** Nisu obavezni pohađati redovnu nastavu. Vanredni studenti nisu obavezni pohađati redovnu nastavu, ali moraju izvršavati sve ostale obaveze predviđene nastavnim programima.",
+      "cited": [
+        "pravila o studiranju na prvom ciklusu studija.pdf, str. 4",
+        "pravila o studiranju na prvom ciklusu studija.pdf, str. 6"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot navodi da je prisustvo obavezno za redovne studente, a da vanredni studenti nisu obavezni pohađati redovnu nastavu, ali moraju izvršavati ostale obaveze, što odgovara očekivanom odgovoru; dodatni detalji o potpisima ne protivrječe.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_23",
+      "type": "generated",
+      "answerable": true,
+      "question": "Kako se provjerava znanje studenata na predmetu Uvod u kriptografiju i koliki je težinski faktor pojedinih provjera?",
+      "expected_answer": "Znanje se provjerava kroz testove u nastavi i završni ispit, a težinski faktor tih provjera određen je Pravilima Univerziteta.",
+      "app_answer": "Provjera znanja na predmetu Uvod u kriptografiju se provodi kroz testove u nastavi i završni ispit.\n\nTežinski faktor pojedinih provjera nije naveden u dokumentima. Piše samo da je težinski faktor određen Pravilima Univerziteta, pa konkretne procente treba provjeriti u tim pravilima ili kod voditelja predmeta.",
+      "cited": [
+        "predmeti na fitu.pdf, str. 44"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot navodi testove u nastavi i završni ispit te da je težinski faktor određen Pravilima Univerziteta, što odgovara očekivanom odgovoru, a dodatna napomena o provjeri procenata mu ne protivrječi.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_24",
+      "type": "generated",
+      "answerable": true,
+      "question": "Koliko minimalno pull requestova moram napraviti da bi moj seminarski rad bio prihvaćen i u koliko različitih sedmica ih moram rasporediti?",
+      "expected_answer": "Za prihvatanje rada potrebno je najmanje 15 kompletnih pull requestova po studentu, raspoređenih kroz najmanje 4 različite sedmice.",
+      "app_answer": "Prema uputama, uslov za prihvatanje rada najmanje 15 kompletnih pull requestova po studentu, raspoređenih kroz najmanje 4 različite sedmice.\n\nKompletan PR mora biti vezan za issue (Closes #N), imati opis (šta je urađeno i kako je testirano), imati najmanje jedan komentar na liniju koda na kartici Files changed (code review) i biti spojen u main.",
+      "cited": [
+        "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot navodi tačno 15 kompletnih pull requestova po studentu raspoređenih kroz najmanje 4 različite sedmice, što odgovara očekivanom odgovoru, a dodatni detalji o kompletnom PR-u mu ne protivrječe.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "gen_25",
+      "type": "generated",
+      "answerable": true,
+      "question": "Koliko nastave redovni studenti moraju minimalno pohađati da bi mogli izaći na ispit iz predmeta Operativni sistemi?",
+      "expected_answer": "Redovni studenti su obavezni prisustvovati nastavi minimalno 70% od ukupnog broja sati predmeta.",
+      "app_answer": "Prema dokumentu o predmetu Operativni sistemi, redovni studenti su obavezni prisustvovati nastavi minimalno 70% od ukupnog broja sati predmeta.\n\nDokumenti ne navode izričito da je ovo uslov za izlazak na ispit, pa to ne mogu potvrditi.",
+      "cited": [
+        "predmeti na fitu.pdf, str. 8"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot navodi tačan podatak da redovni studenti moraju prisustvovati minimalno 70% od ukupnog broja sati predmeta, što odgovara očekivanom odgovoru; dodatna napomena o neizričitom navođenju uslova za ispit ne protivrječi ključnoj činjenici.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "man_01",
+      "type": "manual",
+      "answerable": false,
+      "question": "Koliko košta parking za studente?",
+      "expected_answer": "Ne znam",
+      "app_answer": "Ne znam, ta informacija nije u dokumentima.",
+      "cited": [],
+      "verdict": "TAČNO",
+      "reason": "Chatbot jasno kaže da ne zna odgovor i da informacija nije u dokumentima, te ne iznosi nikakav konkretan iznos ili pravilo.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "man_02",
+      "type": "manual",
+      "answerable": false,
+      "question": "Kada počinje zimski raspust?",
+      "expected_answer": "Ne znam",
+      "app_answer": "Ne znam, ta informacija nije u dokumentima.",
+      "cited": [],
+      "verdict": "TAČNO",
+      "reason": "Chatbot jasno kaže da ne zna odgovor i da informacija nije u dokumentima, te ne navodi nikakav konkretan datum ili pravilo.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "man_03",
+      "type": "manual",
+      "answerable": false,
+      "question": "Koje je radno vrijeme studentske službe?",
+      "expected_answer": "Ne znam",
+      "app_answer": "Ne znam, ta informacija nije u dokumentima.",
+      "cited": [],
+      "verdict": "TAČNO",
+      "reason": "Chatbot jasno kaže da ne zna i da informacija o radnom vremenu studentske službe nije u dokumentima, bez izmišljanja konkretnih podataka.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "man_04",
+      "type": "manual",
+      "answerable": true,
+      "question": "koji predmet moram odslusati prije nego s to mogu upisati matematiku 2 na fitu",
+      "expected_answer": "Preduslov za polaganje Matematike II je odslušan predmet Matematika I.",
+      "app_answer": "Ne znam, ta informacija nije u dokumentima.",
+      "cited": [],
+      "verdict": "NETAČNO",
+      "reason": "Chatbot kaže da ne zna odgovor, a očekivani odgovor je da je preduslov odslušan predmet Matematika I.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "man_05",
+      "type": "manual",
+      "answerable": true,
+      "question": "koje su preduslove potrebno ispuniuti da bih mogao upisati predmet masinsko ucenje na fitu",
+      "expected_answer": "Za polaganje predmeta Mašinsko učenje potrebno je da su položeni svi predmeti iz oblasti Matematike i Statistike.",
+      "app_answer": "Preduslov za polaganje predmeta Mašinsko učenje je: Položeni svi predmeti iz oblasti Matematike i Statistike.\n\nDokumenti ne navode konkretne nazive predmeta iz matematike i statistike, pa to trebate provjeriti u nastavnom planu ili kod službe na fakultetu.",
+      "cited": [
+        "predmeti na fitu.pdf, str. 43"
+      ],
+      "verdict": "TAČNO",
+      "reason": "Chatbot navodi isti ključni preduslov kao očekivani odgovor (položeni svi predmeti iz oblasti Matematike i Statistike), a dodatna napomena o nepostojanju konkretnih naziva predmeta mu ne protivrječi.",
+      "repeated_phrase": null
+    },
+    {
+      "id": "man_06",
+      "type": "manual",
+      "answerable": false,
+      "question": "Ima li menza na fakultetu?",
+      "expected_answer": "Ne znam",
+      "app_answer": "Ne znam, ta informacija nije u dokumentima.",
+      "cited": [],
+      "verdict": "TAČNO",
+      "reason": "Chatbot jasno kaže da ne zna i da informacija nije u dokumentima, te ne daje nikakav izmišljen konkretan odgovor.",
+      "repeated_phrase": null
+    }
+  ]
+}

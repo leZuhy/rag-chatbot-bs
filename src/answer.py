@@ -8,7 +8,10 @@ import sys
 import anthropic
 from dotenv import load_dotenv
 
-from retrieve import hybrid_search
+from retrieve import hybrid_search, vector_search
+
+# Search method is a parameter so the eval can compare them end-to-end.
+SEARCH_METHODS = {"hybrid": hybrid_search, "vector": vector_search}
 
 MODEL = "claude-haiku-5-5"  # cheapest current model; change here to try others
 TOP_K = 5
@@ -34,16 +37,23 @@ Vrati SAMO prepisano pitanje na bosanskom, bez objašnjenja."""
 
 
 def build_documents(chunks):
-    """One document block per chunk, so every citation points to exactly one source + page."""
-    return [
-        {
+    """One document block per chunk, so every citation points to exactly one source + page.
+
+    The course name goes in the title: many syllabus chunks have identical text
+    ("minimalno 70%..."), and without it Claude can't tell which course a chunk is about.
+    """
+    docs = []
+    for c in chunks:
+        title = f"{c['source']}, str. {c['page']}"
+        if c.get("course"):
+            title += f", predmet: {c['course']}"
+        docs.append({
             "type": "document",
             "source": {"type": "text", "media_type": "text/plain", "data": c["text"]},
-            "title": f"{c['source']}, str. {c['page']}",
+            "title": title,
             "citations": {"enabled": True},
-        }
-        for c in chunks
-    ]
+        })
+    return docs
 
 
 def rewrite_question(client, question, past):
@@ -70,10 +80,11 @@ def rewrite_question(client, question, past):
     return rewritten or question
 
 
-def answer(question, history=None, k=TOP_K):
+def answer(question, history=None, k=TOP_K, search="hybrid"):
     """Return (Claude response, retrieved chunks, query used for search).
 
     history: earlier turns as [{"role": "user"|"assistant", "content": "plain text"}, ...].
+    search: "hybrid" (default) or "vector".
     """
     client = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY from the environment
 
@@ -83,7 +94,7 @@ def answer(question, history=None, k=TOP_K):
 
     # Only follow-ups need rewriting; the first question saves the extra call.
     search_query = rewrite_question(client, question, past) if past else question
-    chunks = hybrid_search(search_query, k=k)
+    chunks = SEARCH_METHODS[search](search_query, k)
     current = {
         "role": "user",
         # Documents go before the question; the question changes every call.

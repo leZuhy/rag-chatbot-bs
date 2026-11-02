@@ -1,0 +1,965 @@
+{
+  "k": 5,
+  "n_questions": 27,
+  "summary": {
+    "vector": {
+      "hit@1": 0.7407407407407407,
+      "hit@5": 0.8518518518518519
+    },
+    "bm25": {
+      "hit@1": 0.5185185185185185,
+      "hit@5": 0.8148148148148148
+    },
+    "hybrid": {
+      "hit@1": 0.6666666666666666,
+      "hit@5": 0.9259259259259259
+    }
+  },
+  "questions": [
+    {
+      "id": "gen_01",
+      "question": "Na kojoj skali treba ocijeniti evaluaciju korisničkog interfejsa i koliko detaljno treba obrazložiti svaku ocjenu?",
+      "expected": "Izvještaj za završni ispit.pdf, str. 2",
+      "vector": {
+        "rank": 1,
+        "found": [
+          "Izvještaj za završni ispit.pdf, str. 2",
+          "Izvještaj za završni ispit.pdf, str. 1",
+          "predmeti na fitu.pdf, str. 33",
+          "predmeti na fitu.pdf, str. 31",
+          "predmeti na fitu.pdf, str. 38"
+        ]
+      },
+      "bm25": {
+        "rank": 1,
+        "found": [
+          "Izvještaj za završni ispit.pdf, str. 2",
+          "Izvještaj za završni ispit.pdf, str. 1",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 3",
+          "predmeti na fitu.pdf, str. 35",
+          "predmeti na fitu.pdf, str. 28"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "found": [
+          "Izvještaj za završni ispit.pdf, str. 2",
+          "Izvještaj za završni ispit.pdf, str. 1",
+          "predmeti na fitu.pdf, str. 33",
+          "predmeti na fitu.pdf, str. 27",
+          "predmeti na fitu.pdf, str. 33"
+        ]
+      }
+    },
+    {
+      "id": "gen_02",
+      "question": "Koje dijelove treba da sadrži projektni zadatak i šta se mora nalaziti u dijelu o upravljanju projektom?",
+      "expected": "O1_Upute za izradu projektnog zadatka.pdf, str. 1",
+      "vector": {
+        "rank": 1,
+        "found": [
+          "O1_Upute za izradu projektnog zadatka.pdf, str. 1",
+          "Izvještaj za završni ispit.pdf, str. 2",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 1",
+          "predmeti na fitu.pdf, str. 32",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6"
+        ]
+      },
+      "bm25": {
+        "rank": 1,
+        "found": [
+          "O1_Upute za izradu projektnog zadatka.pdf, str. 1",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 1",
+          "Izvještaj za završni ispit.pdf, str. 2",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 2",
+          "predmeti na fitu.pdf, str. 32"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "found": [
+          "O1_Upute za izradu projektnog zadatka.pdf, str. 1",
+          "Izvještaj za završni ispit.pdf, str. 2",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 1",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 3"
+        ]
+      }
+    },
+    {
+      "id": "gen_03",
+      "question": "Da li GitHub Project mora biti javan, i kako se postavlja njegova vidljivost?",
+      "expected": "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 2",
+      "vector": {
+        "rank": 1,
+        "found": [
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 2",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 1",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 3",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 2",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4"
+        ]
+      },
+      "bm25": {
+        "rank": 1,
+        "found": [
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 2",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 3",
+          "Izvještaj za završni ispit.pdf, str. 1",
+          "O1_Upute za izradu projektnog zadatka.pdf, str. 1",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 5"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "found": [
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 2",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 3",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 1",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 1"
+        ]
+      }
+    },
+    {
+      "id": "gen_04",
+      "question": "Koji predmet moram odslušati prije nego što mogu upisati Matematiku II na FIT-u?",
+      "expected": "predmeti na fitu.pdf, str. 7",
+      "vector": {
+        "rank": 1,
+        "found": [
+          "predmeti na fitu.pdf, str. 7",
+          "predmeti na fitu.pdf, str. 40",
+          "predmeti na fitu.pdf, str. 17",
+          "predmeti na fitu.pdf, str. 3",
+          "predmeti na fitu.pdf, str. 17"
+        ]
+      },
+      "bm25": {
+        "rank": null,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 10",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 9",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 10",
+          "predmeti na fitu.pdf, str. 6"
+        ]
+      },
+      "hybrid": {
+        "rank": 2,
+        "found": [
+          "predmeti na fitu.pdf, str. 6",
+          "predmeti na fitu.pdf, str. 7",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 10",
+          "predmeti na fitu.pdf, str. 40",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6"
+        ]
+      }
+    },
+    {
+      "id": "gen_05",
+      "question": "Od koje akademske godine počinju da se primjenjuju Pravila studiranja na I ciklusu na Univerzitetu \"Džemal Bijedić\" u Mostaru?",
+      "expected": "pravila o studiranju na prvom ciklusu studija.pdf, str. 13",
+      "vector": {
+        "rank": 1,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 13",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 2",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 4",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 15",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 1"
+        ]
+      },
+      "bm25": {
+        "rank": 1,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 13",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 4",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 2",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 10",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 1"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 13",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 2",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 4",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 1",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 8"
+        ]
+      }
+    },
+    {
+      "id": "gen_06",
+      "question": "Koliko nastave moram minimalno pohađati da bih mogao izaći na ispit iz predmeta Uvod u menadžment?",
+      "expected": "predmeti na fitu.pdf, str. 13",
+      "vector": {
+        "rank": 1,
+        "found": [
+          "predmeti na fitu.pdf, str. 13",
+          "predmeti na fitu.pdf, str. 11",
+          "predmeti na fitu.pdf, str. 13",
+          "predmeti na fitu.pdf, str. 12",
+          "predmeti na fitu.pdf, str. 16"
+        ]
+      },
+      "bm25": {
+        "rank": 1,
+        "found": [
+          "predmeti na fitu.pdf, str. 13",
+          "predmeti na fitu.pdf, str. 13",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 4",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 10",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 10"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "found": [
+          "predmeti na fitu.pdf, str. 13",
+          "predmeti na fitu.pdf, str. 13",
+          "predmeti na fitu.pdf, str. 32",
+          "predmeti na fitu.pdf, str. 11",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 4"
+        ]
+      }
+    },
+    {
+      "id": "gen_07",
+      "question": "Koje principe dizajna interakcije treba da znam primijeniti i objasniti na završnom ispitu?",
+      "expected": "Izvještaj za završni ispit.pdf, str. 1",
+      "vector": {
+        "rank": 1,
+        "found": [
+          "Izvještaj za završni ispit.pdf, str. 1",
+          "predmeti na fitu.pdf, str. 27",
+          "Izvještaj za završni ispit.pdf, str. 2",
+          "predmeti na fitu.pdf, str. 27",
+          "predmeti na fitu.pdf, str. 38"
+        ]
+      },
+      "bm25": {
+        "rank": 1,
+        "found": [
+          "Izvještaj za završni ispit.pdf, str. 1",
+          "Izvještaj za završni ispit.pdf, str. 2",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 9",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 3",
+          "predmeti na fitu.pdf, str. 11"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "found": [
+          "Izvještaj za završni ispit.pdf, str. 1",
+          "Izvještaj za završni ispit.pdf, str. 2",
+          "Izvještaj za završni ispit.pdf, str. 1",
+          "predmeti na fitu.pdf, str. 9",
+          "predmeti na fitu.pdf, str. 27"
+        ]
+      }
+    },
+    {
+      "id": "gen_08",
+      "question": "Kako da predam seminarski rad za Razvoj softvera I i kada mogu očekivati povratnu informaciju?",
+      "expected": "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 5",
+      "vector": {
+        "rank": 2,
+        "found": [
+          "predmeti na fitu.pdf, str. 31",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 5",
+          "predmeti na fitu.pdf, str. 25",
+          "predmeti na fitu.pdf, str. 25",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6"
+        ]
+      },
+      "bm25": {
+        "rank": null,
+        "found": [
+          "Izvještaj za završni ispit.pdf, str. 1",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 3",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 1",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 10"
+        ]
+      },
+      "hybrid": {
+        "rank": null,
+        "found": [
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6",
+          "Izvještaj za završni ispit.pdf, str. 1",
+          "Izvještaj za završni ispit.pdf, str. 2",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 3",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 1"
+        ]
+      }
+    },
+    {
+      "id": "gen_09",
+      "question": "Koliki procenat nastave redovni studenti moraju pohađati da bi mogli izaći na ispit iz predmeta Programiranje I?",
+      "expected": "predmeti na fitu.pdf, str. 2",
+      "vector": {
+        "rank": null,
+        "found": [
+          "predmeti na fitu.pdf, str. 24",
+          "predmeti na fitu.pdf, str. 23",
+          "predmeti na fitu.pdf, str. 14",
+          "predmeti na fitu.pdf, str. 6",
+          "predmeti na fitu.pdf, str. 14"
+        ]
+      },
+      "bm25": {
+        "rank": null,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 4",
+          "Izvještaj za završni ispit.pdf, str. 2",
+          "predmeti na fitu.pdf, str. 6",
+          "predmeti na fitu.pdf, str. 32",
+          "predmeti na fitu.pdf, str. 26"
+        ]
+      },
+      "hybrid": {
+        "rank": 5,
+        "found": [
+          "predmeti na fitu.pdf, str. 6",
+          "predmeti na fitu.pdf, str. 23",
+          "predmeti na fitu.pdf, str. 14",
+          "predmeti na fitu.pdf, str. 24",
+          "predmeti na fitu.pdf, str. 2"
+        ]
+      }
+    },
+    {
+      "id": "gen_10",
+      "question": "Koje uslove moram ispuniti da dobijem diplomu prvog ciklusa studija i stručno zvanje bachelor?",
+      "expected": "pravila o studiranju na prvom ciklusu studija.pdf, str. 12",
+      "vector": {
+        "rank": 1,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 12",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 15",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 11",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 2",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 1"
+        ]
+      },
+      "bm25": {
+        "rank": 1,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 12",
+          "Izvještaj za završni ispit.pdf, str. 1",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 2",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 3",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 4"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 12",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 2",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 3",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 3",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 4"
+        ]
+      }
+    },
+    {
+      "id": "gen_11",
+      "question": "Koliko je obavezno prisustvo nastavi za redovne studente na predmetu Kvalitet softvera?",
+      "expected": "predmeti na fitu.pdf, str. 33",
+      "vector": {
+        "rank": 1,
+        "found": [
+          "predmeti na fitu.pdf, str. 33",
+          "predmeti na fitu.pdf, str. 38",
+          "predmeti na fitu.pdf, str. 31",
+          "predmeti na fitu.pdf, str. 25",
+          "predmeti na fitu.pdf, str. 33"
+        ]
+      },
+      "bm25": {
+        "rank": 4,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 4",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 4",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 6",
+          "predmeti na fitu.pdf, str. 33",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 2"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "found": [
+          "predmeti na fitu.pdf, str. 33",
+          "predmeti na fitu.pdf, str. 33",
+          "predmeti na fitu.pdf, str. 38",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 4",
+          "predmeti na fitu.pdf, str. 38"
+        ]
+      }
+    },
+    {
+      "id": "gen_12",
+      "question": "Koju opciju u Visual Studiu treba isključiti da zatvaranje browsera ne bi zaustavilo backend?",
+      "expected": "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 7",
+      "vector": {
+        "rank": 1,
+        "found": [
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 7",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 5",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 5",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4"
+        ]
+      },
+      "bm25": {
+        "rank": 1,
+        "found": [
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 7",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 5",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 3",
+          "Izvještaj za završni ispit.pdf, str. 1",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 10"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "found": [
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 7",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 5",
+          "Izvještaj za završni ispit.pdf, str. 1",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 2",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6"
+        ]
+      }
+    },
+    {
+      "id": "gen_13",
+      "question": "Koji predmet moram odslušati prije nego što mogu polagati Matematiku III na FIT-u?",
+      "expected": "predmeti na fitu.pdf, str. 17",
+      "vector": {
+        "rank": 1,
+        "found": [
+          "predmeti na fitu.pdf, str. 17",
+          "predmeti na fitu.pdf, str. 17",
+          "predmeti na fitu.pdf, str. 40",
+          "predmeti na fitu.pdf, str. 3",
+          "predmeti na fitu.pdf, str. 17"
+        ]
+      },
+      "bm25": {
+        "rank": null,
+        "found": [
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 10",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 8",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 10",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 7"
+        ]
+      },
+      "hybrid": {
+        "rank": 2,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 10",
+          "predmeti na fitu.pdf, str. 17",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6",
+          "predmeti na fitu.pdf, str. 17",
+          "predmeti na fitu.pdf, str. 40"
+        ]
+      }
+    },
+    {
+      "id": "gen_14",
+      "question": "Koliko primjeraka završnog rada moram predati studentskoj službi i koliko dana mora proći od predaje rada do odbrane?",
+      "expected": "pravila o studiranju na prvom ciklusu studija.pdf, str. 12",
+      "vector": {
+        "rank": 1,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 12",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 11",
+          "predmeti na fitu.pdf, str. 35",
+          "predmeti na fitu.pdf, str. 40",
+          "Izvještaj za završni ispit.pdf, str. 2"
+        ]
+      },
+      "bm25": {
+        "rank": 1,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 12",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 11",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 6",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 10",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 8"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 12",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 11",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 6",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 8",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 5"
+        ]
+      }
+    },
+    {
+      "id": "gen_15",
+      "question": "Koje su preduslove potrebno ispuniti da bih mogao upisati predmet Mašinsko učenje na FIT-u?",
+      "expected": "predmeti na fitu.pdf, str. 43",
+      "vector": {
+        "rank": null,
+        "found": [
+          "predmeti na fitu.pdf, str. 40",
+          "predmeti na fitu.pdf, str. 28",
+          "predmeti na fitu.pdf, str. 29",
+          "predmeti na fitu.pdf, str. 31",
+          "predmeti na fitu.pdf, str. 44"
+        ]
+      },
+      "bm25": {
+        "rank": 2,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 10",
+          "predmeti na fitu.pdf, str. 43",
+          "predmeti na fitu.pdf, str. 43",
+          "Izvještaj za završni ispit.pdf, str. 1",
+          "predmeti na fitu.pdf, str. 37"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "found": [
+          "predmeti na fitu.pdf, str. 43",
+          "predmeti na fitu.pdf, str. 43",
+          "predmeti na fitu.pdf, str. 35",
+          "predmeti na fitu.pdf, str. 37",
+          "predmeti na fitu.pdf, str. 40"
+        ]
+      }
+    },
+    {
+      "id": "gen_16",
+      "question": "Šta se dešava sa issueom i karticom na tabli kad se pull request spoji u glavnu granu?",
+      "expected": "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 3",
+      "vector": {
+        "rank": 1,
+        "found": [
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 3",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 2",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 2"
+        ]
+      },
+      "bm25": {
+        "rank": 3,
+        "found": [
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 3",
+          "Izvještaj za završni ispit.pdf, str. 2",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 1"
+        ]
+      },
+      "hybrid": {
+        "rank": 2,
+        "found": [
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 3",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 2",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4"
+        ]
+      }
+    },
+    {
+      "id": "gen_17",
+      "question": "Koliko bodova ili procenata nosi pismeni ispit, a koliko praktični ispit i seminarski rad na predmetu Baze podataka I?",
+      "expected": "predmeti na fitu.pdf, str. 15",
+      "vector": {
+        "rank": null,
+        "found": [
+          "predmeti na fitu.pdf, str. 20",
+          "predmeti na fitu.pdf, str. 16",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 7",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 6",
+          "predmeti na fitu.pdf, str. 30"
+        ]
+      },
+      "bm25": {
+        "rank": 1,
+        "found": [
+          "predmeti na fitu.pdf, str. 15",
+          "predmeti na fitu.pdf, str. 32",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 6",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 1",
+          "predmeti na fitu.pdf, str. 26"
+        ]
+      },
+      "hybrid": {
+        "rank": 3,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 6",
+          "predmeti na fitu.pdf, str. 27",
+          "predmeti na fitu.pdf, str. 15",
+          "predmeti na fitu.pdf, str. 20",
+          "predmeti na fitu.pdf, str. 15"
+        ]
+      }
+    },
+    {
+      "id": "gen_18",
+      "question": "Koliko godina traje dodiplomski studij na Univerzitetu Džemal Bijedić i koliko ECTS bodova se za njega dobija?",
+      "expected": "pravila o studiranju na prvom ciklusu studija.pdf, str. 3",
+      "vector": {
+        "rank": 2,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 2",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 3",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 2",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 7",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 6"
+        ]
+      },
+      "bm25": {
+        "rank": 3,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 6",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 2",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 3",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 4",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 4"
+        ]
+      },
+      "hybrid": {
+        "rank": 2,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 2",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 3",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 6",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 2",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 4"
+        ]
+      }
+    },
+    {
+      "id": "gen_19",
+      "question": "Koliko posto ocjene iz predmeta Analiza i dizajn softvera se računa iz parcijalnih ispita i da li mogu polagati integralni ispit?",
+      "expected": "predmeti na fitu.pdf, str. 19",
+      "vector": {
+        "rank": 2,
+        "found": [
+          "predmeti na fitu.pdf, str. 9",
+          "predmeti na fitu.pdf, str. 19",
+          "predmeti na fitu.pdf, str. 19",
+          "predmeti na fitu.pdf, str. 23",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 7"
+        ]
+      },
+      "bm25": {
+        "rank": 4,
+        "found": [
+          "predmeti na fitu.pdf, str. 26",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 9",
+          "Izvještaj za završni ispit.pdf, str. 1",
+          "predmeti na fitu.pdf, str. 19",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 8"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "found": [
+          "predmeti na fitu.pdf, str. 19",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 7",
+          "predmeti na fitu.pdf, str. 38",
+          "predmeti na fitu.pdf, str. 19",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 6"
+        ]
+      }
+    },
+    {
+      "id": "gen_20",
+      "question": "Koliko kompletnih pull requestova mora napraviti svaki student na projektu?",
+      "expected": "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4",
+      "vector": {
+        "rank": 1,
+        "found": [
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 3",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 1",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4",
+          "Izvještaj za završni ispit.pdf, str. 2"
+        ]
+      },
+      "bm25": {
+        "rank": 1,
+        "found": [
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 6",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 3"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "found": [
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 3",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 1"
+        ]
+      }
+    },
+    {
+      "id": "gen_21",
+      "question": "Koji su preduvjeti za upis predmeta Programiranje III na FIT-u i ko ga može slušati?",
+      "expected": "predmeti na fitu.pdf, str. 14",
+      "vector": {
+        "rank": 1,
+        "found": [
+          "predmeti na fitu.pdf, str. 14",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6",
+          "predmeti na fitu.pdf, str. 6",
+          "predmeti na fitu.pdf, str. 31",
+          "predmeti na fitu.pdf, str. 23"
+        ]
+      },
+      "bm25": {
+        "rank": 2,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 11",
+          "predmeti na fitu.pdf, str. 14",
+          "predmeti na fitu.pdf, str. 6",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 3",
+          "predmeti na fitu.pdf, str. 33"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "found": [
+          "predmeti na fitu.pdf, str. 14",
+          "predmeti na fitu.pdf, str. 6",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 11",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6",
+          "predmeti na fitu.pdf, str. 6"
+        ]
+      }
+    },
+    {
+      "id": "gen_22",
+      "question": "Da li su prisustva na nastavi obavezna za redovne studente, i da li vanredni studenti moraju dolaziti na redovna predavanja?",
+      "expected": "pravila o studiranju na prvom ciklusu studija.pdf, str. 4",
+      "vector": {
+        "rank": 1,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 4",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 5",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 5",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 8",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 8"
+        ]
+      },
+      "bm25": {
+        "rank": 1,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 4",
+          "Izvještaj za završni ispit.pdf, str. 1",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 3",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 4",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 6"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 4",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 5",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 4",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 6",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 5"
+        ]
+      }
+    },
+    {
+      "id": "gen_23",
+      "question": "Kako se provjerava znanje studenata na predmetu Uvod u kriptografiju i koliki je težinski faktor pojedinih provjera?",
+      "expected": "predmeti na fitu.pdf, str. 44",
+      "vector": {
+        "rank": 1,
+        "found": [
+          "predmeti na fitu.pdf, str. 44",
+          "predmeti na fitu.pdf, str. 44",
+          "predmeti na fitu.pdf, str. 36",
+          "predmeti na fitu.pdf, str. 14",
+          "predmeti na fitu.pdf, str. 33"
+        ]
+      },
+      "bm25": {
+        "rank": 2,
+        "found": [
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6",
+          "predmeti na fitu.pdf, str. 44",
+          "predmeti na fitu.pdf, str. 44",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6",
+          "Izvještaj za završni ispit.pdf, str. 1"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "found": [
+          "predmeti na fitu.pdf, str. 44",
+          "predmeti na fitu.pdf, str. 44",
+          "predmeti na fitu.pdf, str. 20",
+          "predmeti na fitu.pdf, str. 29",
+          "predmeti na fitu.pdf, str. 28"
+        ]
+      }
+    },
+    {
+      "id": "gen_24",
+      "question": "Koliko minimalno pull requestova moram napraviti da bi moj seminarski rad bio prihvaćen i u koliko različitih sedmica ih moram rasporediti?",
+      "expected": "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4",
+      "vector": {
+        "rank": 1,
+        "found": [
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 5",
+          "predmeti na fitu.pdf, str. 31",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 3"
+        ]
+      },
+      "bm25": {
+        "rank": 1,
+        "found": [
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4",
+          "predmeti na fitu.pdf, str. 32",
+          "predmeti na fitu.pdf, str. 32"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "found": [
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 4",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 3",
+          "Izvještaj za završni ispit.pdf, str. 2"
+        ]
+      }
+    },
+    {
+      "id": "gen_25",
+      "question": "Koliko nastave redovni studenti moraju minimalno pohađati da bi mogli izaći na ispit iz predmeta Operativni sistemi?",
+      "expected": "predmeti na fitu.pdf, str. 8",
+      "vector": {
+        "rank": 1,
+        "found": [
+          "predmeti na fitu.pdf, str. 8",
+          "predmeti na fitu.pdf, str. 8",
+          "predmeti na fitu.pdf, str. 10",
+          "predmeti na fitu.pdf, str. 19",
+          "predmeti na fitu.pdf, str. 39"
+        ]
+      },
+      "bm25": {
+        "rank": 2,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 4",
+          "predmeti na fitu.pdf, str. 8",
+          "predmeti na fitu.pdf, str. 8",
+          "Izvještaj za završni ispit.pdf, str. 2",
+          "predmeti na fitu.pdf, str. 32"
+        ]
+      },
+      "hybrid": {
+        "rank": 1,
+        "found": [
+          "predmeti na fitu.pdf, str. 8",
+          "predmeti na fitu.pdf, str. 8",
+          "predmeti na fitu.pdf, str. 39",
+          "predmeti na fitu.pdf, str. 39",
+          "predmeti na fitu.pdf, str. 4"
+        ]
+      }
+    },
+    {
+      "id": "man_04",
+      "question": "koji predmet moram odslusati prije nego s to mogu upisati matematiku 2 na fitu",
+      "expected": "predmeti na fitu.pdf, str. 7",
+      "vector": {
+        "rank": 1,
+        "found": [
+          "predmeti na fitu.pdf, str. 7",
+          "predmeti na fitu.pdf, str. 3",
+          "predmeti na fitu.pdf, str. 40",
+          "predmeti na fitu.pdf, str. 19",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 10"
+        ]
+      },
+      "bm25": {
+        "rank": null,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 10",
+          "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf, str. 6",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 9",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 5",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 10"
+        ]
+      },
+      "hybrid": {
+        "rank": null,
+        "found": [
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 10",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 8",
+          "predmeti na fitu.pdf, str. 2",
+          "predmeti na fitu.pdf, str. 6",
+          "predmeti na fitu.pdf, str. 24"
+        ]
+      }
+    },
+    {
+      "id": "man_05",
+      "question": "koje su preduslove potrebno ispuniuti da bih mogao upisati predmet masinsko ucenje na fitu",
+      "expected": "predmeti na fitu.pdf, str. 43",
+      "vector": {
+        "rank": null,
+        "found": [
+          "predmeti na fitu.pdf, str. 44",
+          "predmeti na fitu.pdf, str. 40",
+          "predmeti na fitu.pdf, str. 28",
+          "predmeti na fitu.pdf, str. 10",
+          "predmeti na fitu.pdf, str. 35"
+        ]
+      },
+      "bm25": {
+        "rank": 1,
+        "found": [
+          "predmeti na fitu.pdf, str. 43",
+          "pravila o studiranju na prvom ciklusu studija.pdf, str. 10",
+          "predmeti na fitu.pdf, str. 43",
+          "predmeti na fitu.pdf, str. 37",
+          "Izvještaj za završni ispit.pdf, str. 1"
+        ]
+      },
+      "hybrid": {
+        "rank": 2,
+        "found": [
+          "predmeti na fitu.pdf, str. 37",
+          "predmeti na fitu.pdf, str. 43",
+          "predmeti na fitu.pdf, str. 44",
+          "predmeti na fitu.pdf, str. 43",
+          "predmeti na fitu.pdf, str. 40"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+[
+  {
+    "id": "gen_01",
+    "question": "Na kojoj skali treba ocijeniti evaluaciju korisničkog interfejsa i koliko detaljno treba obrazložiti svaku ocjenu?",
+    "expected_answer": "Ocjene se daju na skali od 1 do 10, a svaka ocjena se kratko obrazlaže jednom rečenicom.",
+    "source": "Izvještaj za završni ispit.pdf",
+    "page": 2,
+    "chunk_id": "Izvještaj za završni ispit.pdf_p2_c0",
+    "type": "generated"
+  },
+  {
+    "id": "gen_02",
+    "question": "Koje dijelove treba da sadrži projektni zadatak i šta se mora nalaziti u dijelu o upravljanju projektom?",
+    "expected_answer": "Projektni zadatak treba sadržavati uvod, opis poslovnog profila, model poslovne orijentacije, upravljanje projektom, definiranje zahtjeva, brojne dijagrame i modele (organizacijske strukture, procesa, podataka, arhitekture), prototip korisničkog interfejsa i zaključak. Dio o upravljanju projektom mora sadržavati naziv projekta, djelokrug i ciljeve, te aktivnosti, gantogram i resurse prikazane u MS Projectu.",
+    "source": "O1_Upute za izradu projektnog zadatka.pdf",
+    "page": 1,
+    "chunk_id": "O1_Upute za izradu projektnog zadatka.pdf_p1_c0",
+    "type": "generated"
+  },
+  {
+    "id": "gen_03",
+    "question": "Da li GitHub Project mora biti javan, i kako se postavlja njegova vidljivost?",
+    "expected_answer": "Da, GitHub Project mora biti javan; vidljivost se postavlja preko Settings projekta → Danger zone → Change visibility → Public, jer javni repozitorij ne čini projekat javnim automatski.",
+    "source": "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf",
+    "page": 2,
+    "chunk_id": "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf_p2_c1",
+    "type": "generated"
+  },
+  {
+    "id": "gen_04",
+    "question": "Koji predmet moram odslušati prije nego što mogu upisati Matematiku II na FIT-u?",
+    "expected_answer": "Preduslov za polaganje Matematike II je odslušan predmet Matematika I.",
+    "source": "predmeti na fitu.pdf",
+    "page": 7,
+    "chunk_id": "predmeti na fitu.pdf_p7_c0",
+    "type": "generated"
+  },
+  {
+    "id": "gen_05",
+    "question": "Od koje akademske godine počinju da se primjenjuju Pravila studiranja na I ciklusu na Univerzitetu \"Džemal Bijedić\" u Mostaru?",
+    "expected_answer": "Pravila se primjenjuju počev od akademske 2015/16. godine, a stupaju na snagu danom donošenja.",
+    "source": "pravila o studiranju na prvom ciklusu studija.pdf",
+    "page": 13,
+    "chunk_id": "pravila o studiranju na prvom ciklusu studija.pdf_p13_c0",
+    "type": "generated"
+  },
+  {
+    "id": "gen_06",
+    "question": "Koliko nastave moram minimalno pohađati da bih mogao izaći na ispit iz predmeta Uvod u menadžment?",
+    "expected_answer": "Redovni studenti su obavezni prisustvovati nastavi minimalno 70% od ukupnog broja sati predmeta.",
+    "source": "predmeti na fitu.pdf",
+    "page": 13,
+    "chunk_id": "predmeti na fitu.pdf_p13_c1",
+    "type": "generated"
+  },
+  {
+    "id": "gen_07",
+    "question": "Koje principe dizajna interakcije treba da znam primijeniti i objasniti na završnom ispitu?",
+    "expected_answer": "Principi dizajna interakcije su: vidljivost, logičnost, konzistentnost, odgovaranje namjeni, povratne informacije i mudra ograničenja.",
+    "source": "Izvještaj za završni ispit.pdf",
+    "page": 1,
+    "chunk_id": "Izvještaj za završni ispit.pdf_p1_c0",
+    "type": "generated"
+  },
+  {
+    "id": "gen_08",
+    "question": "Kako da predam seminarski rad za Razvoj softvera I i kada mogu očekivati povratnu informaciju?",
+    "expected_answer": "Rad se predaje isključivo kroz DLWMS (Nastava → III godina → Razvoj softvera I → Zadaci) uz popunjen propisani obrazac, a predaja je jednom mjesečno: rad do 8. u mjesecu, povratna informacija do 16. Radovi poslani emailom se ne pregledaju.",
+    "source": "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf",
+    "page": 5,
+    "chunk_id": "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf_p5_c1",
+    "type": "generated"
+  },
+  {
+    "id": "gen_09",
+    "question": "Koliki procenat nastave redovni studenti moraju pohađati da bi mogli izaći na ispit iz predmeta Programiranje I?",
+    "expected_answer": "Redovni studenti su obavezni prisustvovati nastavi minimalno 70% od ukupnog broja sati predmeta.",
+    "source": "predmeti na fitu.pdf",
+    "page": 2,
+    "chunk_id": "predmeti na fitu.pdf_p2_c1",
+    "type": "generated"
+  },
+  {
+    "id": "gen_10",
+    "question": "Koje uslove moram ispuniti da dobijem diplomu prvog ciklusa studija i stručno zvanje bachelor?",
+    "expected_answer": "Diploma dodiplomskog studija i stručno zvanje bachelor izdaju se studentu koji je položio sve ispite predviđene studijskim programom i ispunio sve ostale obaveze propisane Statutom Univerziteta i Pravilima. Uz diplomu se izdaje i dodatak diplomi (diploma supplement).",
+    "source": "pravila o studiranju na prvom ciklusu studija.pdf",
+    "page": 12,
+    "chunk_id": "pravila o studiranju na prvom ciklusu studija.pdf_p12_c1",
+    "type": "generated"
+  },
+  {
+    "id": "gen_11",
+    "question": "Koliko je obavezno prisustvo nastavi za redovne studente na predmetu Kvalitet softvera?",
+    "expected_answer": "Redovni studenti su obavezni prisustvovati nastavi minimalno 70% od ukupnog broja sati predmeta.",
+    "source": "predmeti na fitu.pdf",
+    "page": 33,
+    "chunk_id": "predmeti na fitu.pdf_p33_c1",
+    "type": "generated"
+  },
+  {
+    "id": "gen_12",
+    "question": "Koju opciju u Visual Studiu treba isključiti da zatvaranje browsera ne bi zaustavilo backend?",
+    "expected_answer": "Treba isključiti opciju „Stop debugger when browser window is closed” u Tools → Options → Projects and Solutions → Web Projects, jer tada zatvaranje browsera ne zaustavlja backend.",
+    "source": "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf",
+    "page": 7,
+    "chunk_id": "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf_p7_c0",
+    "type": "generated"
+  },
+  {
+    "id": "gen_13",
+    "question": "Koji predmet moram odslušati prije nego što mogu polagati Matematiku III na FIT-u?",
+    "expected_answer": "Preduslov za polaganje predmeta Matematika III je odslušan predmet Matematika I.",
+    "source": "predmeti na fitu.pdf",
+    "page": 17,
+    "chunk_id": "predmeti na fitu.pdf_p17_c0",
+    "type": "generated"
+  },
+  {
+    "id": "gen_14",
+    "question": "Koliko primjeraka završnog rada moram predati studentskoj službi i koliko dana mora proći od predaje rada do odbrane?",
+    "expected_answer": "Student predaje 3 primjerka završnog rada studentskoj službi fakulteta, a od predaje rada do odbrane mora proći najmanje 5 dana.",
+    "source": "pravila o studiranju na prvom ciklusu studija.pdf",
+    "page": 12,
+    "chunk_id": "pravila o studiranju na prvom ciklusu studija.pdf_p12_c0",
+    "type": "generated"
+  },
+  {
+    "id": "gen_15",
+    "question": "Koje su preduslove potrebno ispuniti da bih mogao upisati predmet Mašinsko učenje na FIT-u?",
+    "expected_answer": "Za polaganje predmeta Mašinsko učenje potrebno je da su položeni svi predmeti iz oblasti Matematike i Statistike.",
+    "source": "predmeti na fitu.pdf",
+    "page": 43,
+    "chunk_id": "predmeti na fitu.pdf_p43_c0",
+    "type": "generated"
+  },
+  {
+    "id": "gen_16",
+    "question": "Šta se dešava sa issueom i karticom na tabli kad se pull request spoji u glavnu granu?",
+    "expected_answer": "Nakon pregleda spaja se pull request, issue se automatski zatvara, a kartica na tabli prelazi u kolonu Done.",
+    "source": "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf",
+    "page": 3,
+    "chunk_id": "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf_p3_c0",
+    "type": "generated"
+  },
+  {
+    "id": "gen_17",
+    "question": "Koliko bodova ili procenata nosi pismeni ispit, a koliko praktični ispit i seminarski rad na predmetu Baze podataka I?",
+    "expected_answer": "Pismeni ispit nosi 35%, praktični ispit 35%, a seminarski rad 30% ukupne ocjene znanja.",
+    "source": "predmeti na fitu.pdf",
+    "page": 15,
+    "chunk_id": "predmeti na fitu.pdf_p15_c1",
+    "type": "generated"
+  },
+  {
+    "id": "gen_18",
+    "question": "Koliko godina traje dodiplomski studij na Univerzitetu Džemal Bijedić i koliko ECTS bodova se za njega dobija?",
+    "expected_answer": "Dodiplomski studij traje tri ili četiri godine, a vrednuje se sa 180 ECTS odnosno 240 ECTS studijskih bodova.",
+    "source": "pravila o studiranju na prvom ciklusu studija.pdf",
+    "page": 3,
+    "chunk_id": "pravila o studiranju na prvom ciklusu studija.pdf_p3_c0",
+    "type": "generated"
+  },
+  {
+    "id": "gen_19",
+    "question": "Koliko posto ocjene iz predmeta Analiza i dizajn softvera se računa iz parcijalnih ispita i da li mogu polagati integralni ispit?",
+    "expected_answer": "Ocjena se može dobiti kroz dva parcijalna ispita, svaki nosi 50% težinskog faktora, ili kroz integralni ispit koji nosi 100%. Za svaku provjeru znanja potrebno je ostvariti najmanje 55% od ukupnog broja bodova.",
+    "source": "predmeti na fitu.pdf",
+    "page": 19,
+    "chunk_id": "predmeti na fitu.pdf_p19_c1",
+    "type": "generated"
+  },
+  {
+    "id": "gen_20",
+    "question": "Koliko kompletnih pull requestova mora napraviti svaki student na projektu?",
+    "expected_answer": "Svaki student mora napraviti najmanje 15 kompletnih pull requestova.",
+    "source": "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf",
+    "page": 4,
+    "chunk_id": "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf_p4_c1",
+    "type": "generated"
+  },
+  {
+    "id": "gen_21",
+    "question": "Koji su preduvjeti za upis predmeta Programiranje III na FIT-u i ko ga može slušati?",
+    "expected_answer": "Za predmet Programiranje III potrebno je položiti ispit iz predmeta Programiranje II, a predmet je dostupan samo studentima FIT-a.",
+    "source": "predmeti na fitu.pdf",
+    "page": 14,
+    "chunk_id": "predmeti na fitu.pdf_p14_c0",
+    "type": "generated"
+  },
+  {
+    "id": "gen_22",
+    "question": "Da li su prisustva na nastavi obavezna za redovne studente, i da li vanredni studenti moraju dolaziti na redovna predavanja?",
+    "expected_answer": "Prisustvo svim vidovima nastave je obavezno za redovne studente, dok vanredni studenti nisu obavezni pohađati redovnu nastavu, ali moraju izvršavati sve ostale obaveze predviđene nastavnim programima.",
+    "source": "pravila o studiranju na prvom ciklusu studija.pdf",
+    "page": 4,
+    "chunk_id": "pravila o studiranju na prvom ciklusu studija.pdf_p4_c1",
+    "type": "generated"
+  },
+  {
+    "id": "gen_23",
+    "question": "Kako se provjerava znanje studenata na predmetu Uvod u kriptografiju i koliki je težinski faktor pojedinih provjera?",
+    "expected_answer": "Znanje se provjerava kroz testove u nastavi i završni ispit, a težinski faktor tih provjera određen je Pravilima Univerziteta.",
+    "source": "predmeti na fitu.pdf",
+    "page": 44,
+    "chunk_id": "predmeti na fitu.pdf_p44_c1",
+    "type": "generated"
+  },
+  {
+    "id": "gen_24",
+    "question": "Koliko minimalno pull requestova moram napraviti da bi moj seminarski rad bio prihvaćen i u koliko različitih sedmica ih moram rasporediti?",
+    "expected_answer": "Za prihvatanje rada potrebno je najmanje 15 kompletnih pull requestova po studentu, raspoređenih kroz najmanje 4 različite sedmice.",
+    "source": "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf",
+    "page": 4,
+    "chunk_id": "RS1 upute za izradu seminarskog rada 2026-27_v1.pdf_p4_c0",
+    "type": "generated"
+  },
+  {
+    "id": "gen_25",
+    "question": "Koliko nastave redovni studenti moraju minimalno pohađati da bi mogli izaći na ispit iz predmeta Operativni sistemi?",
+    "expected_answer": "Redovni studenti su obavezni prisustvovati nastavi minimalno 70% od ukupnog broja sati predmeta.",
+    "source": "predmeti na fitu.pdf",
+    "page": 8,
+    "chunk_id": "predmeti na fitu.pdf_p8_c1",
+    "type": "generated"
+  }
+]

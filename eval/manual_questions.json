@@ -1,0 +1,58 @@
+[
+  {
+    "id": "man_01",
+    "question": "Koliko košta parking za studente?",
+    "expected_answer": "Ne znam",
+    "source": null,
+    "page": null,
+    "chunk_id": null,
+    "type": "manual"
+  },
+  {
+    "id": "man_02",
+    "question": "Kada počinje zimski raspust?",
+    "expected_answer": "Ne znam",
+    "source": null,
+    "page": null,
+    "chunk_id": null,
+    "type": "manual"
+  },
+  {
+    "id": "man_03",
+    "question": "Koje je radno vrijeme studentske službe?",
+    "expected_answer": "Ne znam",
+    "source": null,
+    "page": null,
+    "chunk_id": null,
+    "type": "manual"
+  },
+  {
+    "id": "man_04",
+    "question": "koji predmet moram odslusati prije nego s to mogu upisati matematiku 2 na fitu",
+    "expected_answer": "Preduslov za polaganje Matematike II je odslušan predmet Matematika I.",
+    "source": "predmeti na fitu.pdf",
+    "page": 7,
+    "chunk_id": "predmeti na fitu.pdf_p7_c0",
+    "type": "manual",
+    "paraphrase_of": "gen_04"
+  },
+  {
+    "id": "man_05",
+    "question": "koje su preduslove potrebno ispuniuti da bih mogao upisati predmet masinsko ucenje na fitu",
+    "expected_answer": "Za polaganje predmeta Mašinsko učenje potrebno je da su položeni svi predmeti iz oblasti Matematike i Statistike.",
+    "source": "predmeti na fitu.pdf",
+    "page": 43,
+    "chunk_id": "predmeti na fitu.pdf_p43_c0",
+    "type": "manual",
+    "paraphrase_of": "gen_15"
+  },
+  {
+    "id": "man_06",
+    "question": "Ima li menza na fakultetu?",
+    "expected_answer": "Ne znam",
+    "source": null,
+    "page": null,
+    "chunk_id": null,
+    "type": "manual"
+  }
+]

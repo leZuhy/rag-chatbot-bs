@@ -3,6 +3,7 @@
 Run from the project root:  python src/ingest.py
 """
 
+import re
 from pathlib import Path
 
 import chromadb
@@ -18,6 +19,21 @@ MODEL_NAME = "intfloat/multilingual-e5-base"
 # and the special start/end tokens, so nothing gets silently truncated.
 CHUNK_TOKENS = 480
 OVERLAP_TOKENS = 50
+
+# Course syllabi start each page with "Naziv predmeta: <NAME>".
+COURSE_RE = re.compile(r"Naziv predmeta:\s*(.+)")
+
+
+def make_header(pdf_path, course):
+    """Context line prepended to a chunk for embedding and BM25 (not for citations).
+
+    A chunk like "Redovni studenti su obavezni prisustvovati nastavi minimalno 70%..."
+    appears in almost every syllabus; without the course name it can't be told apart.
+    """
+    header = f"Dokument: {pdf_path.stem}."
+    if course:
+        header += f" Predmet: {course}."
+    return header
 
 
 def load_pages(pdf_path):
@@ -59,16 +75,26 @@ def main():
     model = SentenceTransformer(MODEL_NAME)
     tokenizer = model.tokenizer
 
-    texts, metadatas, ids = [], [], []
+    texts, headers, metadatas, ids = [], [], [], []
     for pdf_path in sorted(PDF_DIR.glob("*.pdf")):
         pages = load_pages(pdf_path)
         n_before = len(texts)
+        course = None  # carried over to the next page if a syllabus spans pages
         for page_num, page_text in pages:
+            match = COURSE_RE.search(page_text)
+            if match:
+                course = match.group(1).strip()
+            header = make_header(pdf_path, course)
             # Chunk per page so every chunk has exactly one page number to cite.
             for i, chunk in enumerate(chunk_text(page_text, tokenizer)):
                 chunk_id = f"{pdf_path.name}_p{page_num}_c{i}"
                 texts.append(chunk)
-                metadatas.append({"source": pdf_path.name, "page": page_num, "chunk_id": chunk_id})
+                headers.append(header)
+                metadatas.append({
+                    "source": pdf_path.name, "page": page_num, "chunk_id": chunk_id,
+                    "header": header,  # retrieve.py uses it for BM25
+                    "course": course or "",  # Chroma metadata can't be None; answer.py puts it in the title
+                })
                 ids.append(chunk_id)
         print(f"{pdf_path.name}: {len(pages)} pages with text, {len(texts) - n_before} chunks")
 
@@ -77,9 +103,16 @@ def main():
         return
 
     # e5 was trained with prefixes; without "passage: " retrieval quality drops.
+    # The header goes into the embedding only; Chroma stores the clean text for citations.
+    to_embed = [f"passage: {h}\n{t}" for h, t in zip(headers, texts)]
+    # The header adds ~15-25 tokens, so a full 480-token chunk can pass e5's 512 limit
+    # and lose its last few tokens (those are also in the next chunk via the overlap).
+    too_long = sum(len(tokenizer(s)["input_ids"]) > 512 for s in to_embed)
+    print(f"Chunks over 512 tokens with header (tail truncated): {too_long}/{len(to_embed)}")
+
     # Normalized vectors -> cosine similarity == dot product.
     embeddings = model.encode(
-        ["passage: " + t for t in texts],
+        to_embed,
         batch_size=32,
         normalize_embeddings=True,
         show_progress_bar=True,
@@ -106,6 +139,7 @@ def main():
     print(f"\nTotal chunks stored: {collection.count()}")
     for idx in [0, len(texts) // 2]:
         print(f"\n--- Example chunk: {metadatas[idx]} ---")
+        print(f"[header] {headers[idx]}")
         print(texts[idx][:600] + ("..." if len(texts[idx]) > 600 else ""))
 
 
